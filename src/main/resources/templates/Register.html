@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registro</title>
+  <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+	<div class="barra-navegacion">
+		<img src="logo.png" width="30" height="30">
+		<div class="logo">BEMAP</div>
+	</div>
+  <header>
+    <h2>Registro:</h2>
+  </header>
+  <main>
+    <form action="/login" method="post">
+		<input type="text" name="nombre" placeholder="Nombre"><br>
+		<input type="text" name="apellido" placeholder="Apellido" style="margin-top: 10px;"><br>
+		
+		<h3>Sexo:</h3>
+		<input type="radio" name="Sexo" value="femenino" checked> Femenino<br>
+		<input type="radio" name="Sexo" value="masculino"> Masculino<br>
+		<input type="radio" name="Sexo" value="otro"> Otro <br>
+		
+		<h3>Rango de Edad:</h3>
+		<input type="radio" name="Edad" value="10 - 18"> 10 - 18<br>
+		<input type="radio" name="Edad" value="19 - 30"> 19 - 30<br>
+		<input type="radio" name="Edad" value="31 - 50"> 31 - 50<br>
+		<input type="radio" name="Edad" value="Mayor de 50"> Mayor de 50<br>
+		
+    	<input type="text" name="username" placeholder="Correo" style="margin-top: 10px;"><br>
+      	<input type="password" name="password" placeholder="Contraseña" style="margin-top: 10px;"><br>
+      	<input type="password" name="passwordConfirmation" placeholder="Confirmar contraseña" style="margin-top: 10px;"><br>
+      <button type="submit" style="margin-top: 10px;">Registrar</button>
+      <button type="button" onclick="history.back()">Regresar</button>
+    </form>
+  </main>
+</body>
+</html>
